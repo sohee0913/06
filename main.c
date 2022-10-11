@@ -2,22 +2,20 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-void print_star(void)
-{	int i;
+void func(int x)
+{
+	
+	printf("func x is at %p\n", &x);
 
-	for (i=0;i<10;i++)
-	printf("*");
 }
 
 
 int main(int argc, char *argv[]){
 	
-	int i;
+	int x;
 	
-	print_star();
-	print_star();
-	print_star();
-	
+	printf("main x is at %p\n", &x);
+	func(x);	
 	
 	return 0;
 }
